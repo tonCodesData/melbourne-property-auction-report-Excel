@@ -9,8 +9,8 @@ From an dataset consisting of 25478 rows and 24 columns, deatiling properties so
 The process of making the visualisations: 
 1. First to make data easier to work with, I converted the data into a table. 
 2. On the first visualisation, I wanted to show the trends for House and Unit sales for each year. 
-2.1 In the Melbourne Trends sheet, I created a PivotTable with the data - added Price to Values, Month to Row, and Type to Column. This provided with house and falt sales for each month. 
-2.2 by changing the calculation to an Average and Number format to Currency, we get the average unit price for each month by housing type. 
-2.3 To visualise I selected the 2D Line PivotChart, turned off gridlines, legend, Field buttons, and changed the vertical axis units to Thousands. Then I selected a line series and formatted to Smoothed Line checkbox. 
+    * In the Melbourne Trends sheet, I created a PivotTable with the data - added Price to Values, Month to Row, and Type to Column. This provided with house and falt sales for each month. 
+    * by changing the calculation to an Average and Number format to Currency, we get the average unit price for each month by housing type. 
+    * To visualise I selected the 2D Line PivotChart, turned off gridlines, legend, Field buttons, and changed the vertical axis units to Thousands. Then I selected a line series and formatted to Smoothed Line checkbox. 
 
 
