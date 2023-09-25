@@ -13,20 +13,20 @@ The process of making the visualisations:
     * by changing the calculation to an Average and Number format to Currency, we get the average unit price for each month by housing type. 
     * To visualise I selected the **2D Line PivotChart**, turned off gridlines, legend, Field buttons, and changed the vertical axis units to Thousands. Then I selected a line series and formatted to Smoothed Line checkbox. 
 
-    ![trend-and-process](screenshots\trend-and-process.png)
+    ![trend-and-process](screenshots/trend-and-process.png)
 
 3. In the **Suburb Price** sheet, wanted to create a visualisation for Average sales.
     * Made a PivotTable using Sales table. Put Price into Values, change its calculation to Average, suburb into Rows, **Year, Month** and **CouncilArea** into Filters. 
     * Inserted a **2D Column PivotChart** for this PivotTable. Turned of gridlines, legend, chart title and Field Buttons. Changed the vertical axis units to Millions.  
     In the PivotTable, the user can filter by Year, Month(multiple) and CouncilArea to visualise Average Sales for a particular council in a timeframe.
 
-    ![avg-sales-price-by-suburb](screenshots\avg-sales-price-by-suburb.png)
+    ![avg-sales-price-by-suburb](screenshots/avg-sales-price-by-suburb.png)
 
 4. In the **Top Suburbs** sheet, created a PivotTable showing the highest and lowest Price of each Suburb. 
     * Added price to Values twice and change the calculations to **MAX** and **MIN**.
     * Added filters for **Type** and **CouncilArea**, sorted by Mx price (Desc), and filtered by Value to show only the top 8 by Max Price.  
 
-    ![high-low-suburb-price](screenshots\high-low-suburb.png)
+    ![high-low-suburb-price](screenshots/high-low-suburb.png)
 
 5. Finally, created a gauge chart showing clearance rates.  
     * Clicked on the Sales table, pressed keyboard shortcut ALT + D + P, clicked Next. In the box asking Range, typed Sales and clicked Next. 
@@ -37,10 +37,10 @@ The process of making the visualisations:
     * Creating the gauge:
         * In my gauge chart, I wanted to show the two values as half the pie. So I needed another row for the other (invisible) half of the pie. Clicked on the row label, went to **Fields, Items and Sets** and selected **Calculated Item**. Next to Name typed **Base**, in the Formula added **Cleared + NOT**. 
 
-        ![gauge-process](screenshots\gauge-process.png)
+        ![gauge-process](screenshots/gauge-process.png)
 
         * But that threw out the percentages. To fix it, went back to **Show value as** and selected **% of..**. Set **Base Field** to **Clearance** and **Base Item** to **Base**. 
         * Inserted a Donut Pivot Chart for this Pivot Table. Turned off chart title, legend, and Field Buttons. Changed the angle of first slice and Hole size, set line to No Line and set the fill for the Base segment to No fill. 
 
-    ![gauge](screenshots\gauge.png)
+    ![gauge](screenshots/gauge.png)
 
