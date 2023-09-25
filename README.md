@@ -37,7 +37,7 @@ The process of making the visualisations:
     * Creating the gauge:
         * In my gauge chart, I wanted to show the two values as half the pie. So I needed another row for the other (invisible) half of the pie. Clicked on the row label, went to **Fields, Items and Sets** and selected **Calculated Item**. Next to Name typed **Base**, in the Formula added **Cleared + NOT**. 
 
-![gauge-process](image-3.png)
+        ![gauge-process](image-3.png)
 
         * But that threw out the percentages. To fix it, went back to **Show value as** and selected **% of..**. Set **Base Field** to **Clearance** and **Base Item** to **Base**. 
         * Inserted a Donut Pivot Chart for this Pivot Table. Turned off chart title, legend, and Field Buttons. Changed the angle of first slice and Hole size, set line to No Line and set the fill for the Base segment to No fill. 
