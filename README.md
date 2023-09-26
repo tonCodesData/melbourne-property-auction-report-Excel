@@ -1,12 +1,8 @@
-A stylish interactive dashboard of Melbourne Property Market
-
-
-![melbourne-property](https://github.com/tonCodesData/melbourne-property-auction-report-Excel/assets/124179394/de12a80a-32b5-4d59-afb0-4e3245343a35)
-
+## A stylish interactive dashboard of Melbourne Property Auction Market
 
 From an dataset consisting of 25478 rows and 24 columns, deatiling properties sold at auction for 2017 and 2018 in Melbourne, Australia, I created a series of visualisations and later used them in constructing an interactive dashboard for exploring the Melourne property market. The users can see key metrics for a selected Council Region and Month.   
 
-The process of making the visualisations: 
+### The process of making the visualisations: 
 1. First to make data easier to work with, I converted the data into a table and named it Sales. 
 2. On the first visualisation, I wanted to show the trends for House and Unit sales for each year in the Melbourne Trends sheet.  
     * I created a PivotTable with the data - added **Price** to Values, **Month** to Row, and **Type** to Column.  
@@ -43,4 +39,21 @@ The process of making the visualisations:
         * Inserted a Donut Pivot Chart for this Pivot Table. Turned off chart title, legend, and Field Buttons. Changed the angle of first slice and Hole size, set line to No Line and set the fill for the Base segment to No fill. 
 
     ![gauge](screenshots/gauge.png)
+
+### Making the dashboard
+
+Next, I created a new worksheet named Dahsboard, added a logo, added shapes as tiles, named them and added a title. The, I pasted the pivotcharts from Melbourne Trends, Suburb Price, and Clearance Rates sheet. 
+
+To include the PivotTable in the **Top Suburbs** sheet, select A3:D11 and copied. Went to the **Dashboard** sheet, clicked in an empty cell, right clicked and selected **Paste Special**, then selected **Paste as Linked Image**. Moved the image onto the **Top Suburbs** tile.
+
+Next I needed the Average Unit Price data. In a new **Calcs** sheet, I used an **AVERAGEIFS** to get an average for a selected Council Region and Month in 2017 and 2018. Then, selected J4 and applied custom number formatting so that positive values show as an up arrow, negative values show as a down arrow and 0 shows nothing. Selected **I4:J7** and copied, pasted as a linked image on Dashoard sheet, then moved onto the Average Unit Price tile and ensured it is Bottom aligned with the image on the Average House Price tile.
+
+Copied cells E10:E11 from the Clearance Rate sheet and pasted as a linked image to finish off the Clearance Rate tile. 
+
+Then added the slicers and provided the final touches to create the following dashboard. 
+
+![dashboard](screenshots/dashboard.png)
+
+
+
 
