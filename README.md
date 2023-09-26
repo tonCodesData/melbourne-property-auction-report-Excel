@@ -1,6 +1,8 @@
 ## A stylish interactive dashboard of Melbourne Property Auction Market
 
-From an dataset consisting of 25478 rows and 24 columns, deatiling properties sold at auction for 2017 and 2018 in Melbourne, Australia, I created a series of visualisations and later used them in constructing an interactive dashboard for exploring the Melourne property market. The users can see key metrics for a selected Council Region and Month.   
+From an dataset consisting of 25478 rows and 24 columns, deatiling properties sold at auction for 2017 and 2018 in Melbourne, Australia, I created a series of visualisations and later used them in constructing an interactive dashboard for exploring the Melourne property market. The users can see key metrics for a selected Council Region and Month. 
+
+Click [here](https://github.com/tonCodesData/melbourne-property-auction-report-excel/raw/master/melbourne-property-auctions-dashboard.xlsm) to download the excel file containing data, calculations, and the interactive dashboard.
 
 ### The process of making the visualisations: 
 1. First to make data easier to work with, I converted the data into a table and named it Sales. 
